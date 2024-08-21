@@ -1,20 +1,20 @@
-# Tkinter GUI Project
+# Python 102
 
 # Objective
-This project will validate your knowledge of Tkinter and File Handling in Python.
+This project will validate your knowledge of the Python 102 topics.
 
 # Problem
-You need to build a task tracker application to save tasks in a file. The application should add tasks, and display all tasks. 
+You must build a GUI application to save a person's name in a file. The application should add a name, and display all names. 
 
 # Implementation
 
-Create Two Files: `main.py` and list.txt.
+Create Two Files: `main.py` and `names.txt`.
 
-1. Create class `Task` 
-    - create object variable `name`
-    - create `get_name` function to return name
-    - create `set_name` function to set name
-    - create `write_task` function to append task's name to the file `list.txt`
+1. Create class `Person`
+    - create object private variable `name`
+    - create a `get_name` function to return name
+    - create a `set_name` function to set name
+    - create a `write_task` function to append a name to the file `names.txt`
 
 2. Create a Tkinter window with the following specifications:
     - Name: tk
