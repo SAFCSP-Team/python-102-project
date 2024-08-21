@@ -14,25 +14,15 @@ Create Two Files: `main.py` and `names.txt`.
     - create object private variable `name`
     - create a `get_name` function to return name
     - create a `set_name` function to set name
-    - create a `write_task` function to append a name to the file `names.txt`
+    - create a `write_file` function to append a name to the file `names.txt`
+    - create a class method `print_file` function to print the file `names.txt` content
 
-2. Create a Tkinter window with the following specifications:
-    - Name: tk
-    - Title: Task Tracker
-    - Geometry: 900x600
+2. Create function `check_input()` in the body do the following:
+    - if `ent` is empty change `msg` to display "Please enter a name"
+    - else change `msg` to display "Name added"
+    - create an object called `obj1` from the Person class and pass the `ent.get()` as argument
+    - call `write_file()` from `obj1`
+    - print the `total` 
 
-3. Create Label and Entry to add tasks. 
-    - Create a Label: Enter Task called `task_label`
-    - Create an Entry: To enter the task called `task_entry`
-
-4. Create message Label
-    - Create an **empty** Label called `message_label` to display messages 
-
-5. Create function `check_input()`
-    - if `task_input` is empty config message_label to display "Please enter a task"
-    - else config message_label to display "Task Added" and create object of `Task` class, pass `task_input` as parameter and call `write_task()` function
-
-6. Create Button to add tasks
-    - create a Button called `save_button` with text "Save Task" and command `check_input`
-
-7. call `mainloop()` to run the window
+6. Call `print_file()`
+    - before `tk.mainloop()` call the `print_file()` from `Person` class
